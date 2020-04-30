@@ -20,10 +20,8 @@ class Mouna(FloatLayout):
              "c19.jpg", "c20.jpg", "c21.jpg", "c22.jpg", "c23.jpg", "c24.jpg", "c25.jpg", "c26.png", "c27.jpg", "c28.jpg",
              "c29.jpg", "c30.png", "c31.jpg", "c32.jpg", "c33.jpg"])
         i = random.randrange(0, len(A))
-        y = B[i]
-        zx = A[i]
-        self.vd = print(zx)
-        self.vc = y
+        self.vd = print(A[i])
+        self.vc = B[i]
 class MyApp(App):
     def build(self):
         self.sound = SoundLoader.load("sound.wav")
