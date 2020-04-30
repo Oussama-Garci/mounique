@@ -3,7 +3,6 @@ import numpy as np
 from kivy.app import App
 from kivy.properties import ObjectProperty
 from kivy.uix.floatlayout import FloatLayout
-from bidi.algorithm import get_display
 from kivy.core.audio import SoundLoader
 
 class Mouna(FloatLayout):
