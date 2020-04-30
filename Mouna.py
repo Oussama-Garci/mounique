@@ -3,7 +3,6 @@ import numpy as np
 from kivy.app import App
 from kivy.properties import ObjectProperty
 from kivy.uix.floatlayout import FloatLayout
-from bidi.algorithm import get_display
 from kivy.core.audio import SoundLoader
 
 class Mouna(FloatLayout):
@@ -23,7 +22,7 @@ class Mouna(FloatLayout):
         i = random.randrange(0, len(A))
         y = B[i]
         zx = A[i]
-        self.vd = get_display(zx)
+        self.vd = print(zx)
         self.vc = y
 class MyApp(App):
     def build(self):
